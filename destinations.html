@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Điểm đến | Đi Đâu Đó
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-mark">
+     ✦
+    </span>
+    ĐI ĐÂU ĐÓ
+    <span class="brand-dot">
+     .
+    </span>
+   </a>
+   <button aria-label="Mở menu" class="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav">
+    <a href="index.html">
+     Trang chủ
+    </a>
+    <a class="active" href="destinations.html">
+     Điểm đến
+    </a>
+    <a href="itinerary.html">
+     Lịch trình
+    </a>
+    <a href="experiences.html">
+     Trải nghiệm
+    </a>
+    <a href="about.html">
+     Giới thiệu
+    </a>
+   </nav>
+   <div class="header-actions">
+    <button aria-label="Đổi giao diện" class="theme-toggle">
+     ☾
+    </button>
+    <a class="btn btn-small" href="itinerary.html">
+     Lên kế hoạch ↗
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="page-hero destination-hero">
+    <div class="container">
+     <span class="eyebrow light">
+      CHỌN NƠI BẠN MUỐN ĐẾN
+     </span>
+     <h1>
+      Mỗi vùng đất
+      <br/>
+      <em>
+       một câu chuyện.
+      </em>
+     </h1>
+     <p>
+      Khám phá những điểm đến đặc sắc trên dải đất hình chữ S.
+     </p>
+    </div>
+   </section>
+   <section class="section container">
+    <div class="section-heading">
+     <div>
+      <span class="eyebrow">
+       BẢN ĐỒ TRẢI NGHIỆM
+      </span>
+      <h2>
+       Tìm điểm đến
+       <em>
+        của bạn
+       </em>
+      </h2>
+     </div>
+     <span class="result-count" id="resultCount">
+      6 điểm đến
+     </span>
+    </div>
+    <div class="filter-bar">
+     <div class="search-box">
+      <span>
+       ⌕
+      </span>
+      <input id="destinationSearch" placeholder="Bạn muốn đi đâu?" type="search"/>
+     </div>
+     <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">
+       Tất cả
+      </button>
+      <button class="filter-btn" data-filter="north">
+       Miền Bắc
+      </button>
+      <button class="filter-btn" data-filter="central">
+       Miền Trung
+      </button>
+      <button class="filter-btn" data-filter="south">
+       Miền Nam
+      </button>
+     </div>
+    </div>
+    <div class="destination-list" id="destinationList">
+     <article class="place-card" data-name="ha giang hà giang núi" data-region="north">
+      <img alt="Núi non Hà Giang" src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=85"/>
+      <div class="place-info">
+       <span class="eyebrow">
+        MIỀN BẮC · NÚI RỪNG
+       </span>
+       <h3>
+        Hà Giang
+       </h3>
+       <p>
+        Cung đường đèo hùng vĩ, cao nguyên đá và những bản làng bình yên.
+       </p>
+       <div class="place-meta">
+        <span>
+         ◷ 3–4 ngày
+        </span>
+        <button class="detail-btn" data-place="Hà Giang">
+         Khám phá ↗
+        </button>
+       </div>
+      </div>
+     </article>
+     <article class="place-card" data-name="sa pa sapa lào cai ruộng bậc thang" data-region="north">
+      <img alt="Núi Sa Pa" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Terraced_fields_Sa_Pa_Vietnam.JPG/960px-Terraced_fields_Sa_Pa_Vietnam.JPG"/>
+      <div class="place-info">
+       <span class="eyebrow">
+        MIỀN BẮC · CAO NGUYÊN
+       </span>
+       <h3>
+        Sa Pa
+       </h3>
+       <p>
+        Thị trấn trong sương, ruộng bậc thang và đỉnh Fansipan nổi tiếng.
+       </p>
+       <div class="place-meta">
+        <span>
+         ◷ 2–3 ngày
+        </span>
+        <button class="detail-btn" data-place="Sa Pa">
+         Khám phá ↗
+        </button>
+       </div>
+      </div>
+     </article>
+     <article class="place-card" data-name="hoi an quảng nam phố cổ" data-region="central">
+      <img alt="Phố cổ Hội An" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Hoi_An_lanterns.jpg/960px-Hoi_An_lanterns.jpg"/>
+      <div class="place-info">
+       <span class="eyebrow">
+        MIỀN TRUNG · DI SẢN
+       </span>
+       <h3>
+        Hội An
+       </h3>
+       <p>
+        Phố cổ đèn lồng, những con đường nhỏ và nhịp sống chậm rãi.
+       </p>
+       <div class="place-meta">
+        <span>
+         ◷ 2 ngày
+        </span>
+        <button class="detail-btn" data-place="Hội An">
+         Khám phá ↗
+        </button>
+       </div>
+      </div>
+     </article>
+     <article class="place-card" data-name="da nang đà nẵng biển cầu" data-region="central">
+      <img alt="Thành phố biển Đà Nẵng" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/My_Khe_Beach_Da_Nang.jpg/960px-My_Khe_Beach_Da_Nang.jpg"/>
+      <div class="place-info">
+       <span class="eyebrow">
+        MIỀN TRUNG · THÀNH PHỐ BIỂN
+       </span>
+       <h3>
+        Đà Nẵng
+       </h3>
+       <p>
+        Thành phố trẻ với bãi biển đẹp, bán đảo Sơn Trà và nhiều cây cầu.
+       </p>
+       <div class="place-meta">
+        <span>
+         ◷ 2–3 ngày
+        </span>
+        <button class="detail-btn" data-place="Đà Nẵng">
+         Khám phá ↗
+        </button>
+       </div>
+      </div>
+     </article>
+     <article class="place-card" data-name="da lat đà lạt lâm đồng hoa" data-region="south">
+      <img alt="Đà Lạt" src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=800&q=85"/>
+      <div class="place-info">
+       <span class="eyebrow">
+        TÂY NGUYÊN · NGHỈ DƯỠNG
+       </span>
+       <h3>
+        Đà Lạt
+       </h3>
+       <p>
+        Không khí se lạnh, rừng thông, hồ nước và những quán cà phê xinh xắn.
+       </p>
+       <div class="place-meta">
+        <span>
+         ◷ 2–3 ngày
+        </span>
+        <button class="detail-btn" data-place="Đà Lạt">
+         Khám phá ↗
+        </button>
+       </div>
+      </div>
+     </article>
+     <article class="place-card" data-name="phu quoc phú quốc an giang biển đảo" data-region="south">
+      <img alt="Biển Phú Quốc" src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=85"/>
+      <div class="place-info">
+       <span class="eyebrow">
+        MIỀN NAM · BIỂN ĐẢO
+       </span>
+       <h3>
+        Phú Quốc
+       </h3>
+       <p>
+        Nước biển trong xanh, bãi cát dài và những khoảnh khắc hoàng hôn.
+       </p>
+       <div class="place-meta">
+        <span>
+         ◷ 3–4 ngày
+        </span>
+        <button class="detail-btn" data-place="Phú Quốc">
+         Khám phá ↗
+        </button>
+       </div>
+      </div>
+     </article>
+    </div>
+    <p class="empty-state" hidden="" id="emptyState">
+     Chưa tìm thấy điểm đến phù hợp. Thử từ khóa khác nhé!
+    </p>
+   </section>
+   <div aria-hidden="true" class="modal" id="placeModal">
+    <div class="modal-backdrop">
+    </div>
+    <div class="modal-panel">
+     <button aria-label="Đóng" class="modal-close">
+      ×
+     </button>
+     <span class="eyebrow">
+      GỢI Ý KHÁM PHÁ
+     </span>
+     <h2 id="modalTitle">
+      Điểm đến
+     </h2>
+     <p id="modalText">
+     </p>
+     <a class="btn" href="itinerary.html">
+      Xem lịch trình gợi ý ↗
+     </a>
+    </div>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <a class="brand" href="index.html">
+     ✦ ĐI ĐÂU ĐÓ
+     <span class="brand-dot">
+      .
+     </span>
+    </a>
+    <p>
+     Đi để cảm nhận. Đi để trưởng thành.
+    </p>
+    <span>
+     © 2026 ĐI ĐÂU ĐÓ.
+    </span>
+   </div>
+  </footer>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,33 @@
+HUONG DAN CHINH SUA WEBSITE DU LICH - DI DAU DO
+
+1. Mo website:
+   - Giai nen file ZIP.
+   - Mo thu muc di_dau_do_travel.
+   - Nhan dup index.html de xem website.
+
+2. Doi ten website:
+   - Mo cac file HTML bang Notepad.
+   - Tim cum tu "DI DAU DO" va thay bang ten moi.
+   - Luu bang Ctrl + S.
+
+3. Doi mau sac:
+   - Mo css/style.css bang Notepad.
+   - Tim phan :root o gan dau file.
+   - Sua cac ma mau HEX, vi du #315c4d.
+   - Luu bang Ctrl + S va tai lai trang web.
+
+4. Sua noi dung tung trang:
+   - index.html: Trang chu.
+   - destinations.html: Diem den.
+   - itinerary.html: Lich trinh.
+   - experiences.html: Trai nghiem.
+   - about.html: Gioi thieu.
+
+5. Sua hieu ung va chuc nang:
+   - js/main.js
+
+Luu y:
+   - Khong xoa dau ngoac < > trong HTML.
+   - Khong xoa dau { } va dau ; trong CSS/JavaScript.
+   - Nen giu nguyen ten va vi tri cac thu muc css, js.
+   - Nen tao mot ban sao truoc khi sua.

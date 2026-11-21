@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Trải nghiệm | Đi Đâu Đó
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-mark">
+     ✦
+    </span>
+    ĐI ĐÂU ĐÓ
+    <span class="brand-dot">
+     .
+    </span>
+   </a>
+   <button aria-label="Mở menu" class="menu-toggle">
+    ☰
+   </button>
+   <nav class="main-nav">
+    <a href="index.html">
+     Trang chủ
+    </a>
+    <a href="destinations.html">
+     Điểm đến
+    </a>
+    <a href="itinerary.html">
+     Lịch trình
+    </a>
+    <a class="active" href="experiences.html">
+     Trải nghiệm
+    </a>
+    <a href="about.html">
+     Giới thiệu
+    </a>
+   </nav>
+   <div class="header-actions">
+    <button aria-label="Đổi giao diện" class="theme-toggle">
+     ☾
+    </button>
+    <a class="btn btn-small" href="destinations.html">
+     Khám phá ↗
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="page-hero experience-hero">
+    <div class="container">
+     <span class="eyebrow light">
+      ĐI XA HƠN MỘT CHÚT
+     </span>
+     <h1>
+      Không chỉ là nơi đến,
+      <br/>
+      <em>
+       mà là điều ta trải qua.
+      </em>
+     </h1>
+     <p>
+      Gom nhặt những trải nghiệm làm nên một chuyến đi đáng nhớ.
+     </p>
+    </div>
+   </section>
+   <section class="section container">
+    <div class="section-heading">
+     <div>
+      <span class="eyebrow">
+       SẮC MÀU HÀNH TRÌNH
+      </span>
+      <h2>
+       Điều gì khiến bạn
+       <em>
+        say mê?
+       </em>
+      </h2>
+     </div>
+    </div>
+    <div class="experience-grid">
+     <article class="experience-card">
+      <img alt="Thiên nhiên" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85"/>
+      <div>
+       <span>
+        01 / THIÊN NHIÊN
+       </span>
+       <h3>
+        Trốn vào thiên nhiên
+       </h3>
+       <p>
+        Đi bộ giữa rừng, ngắm bình minh trên núi hay lắng nghe sóng biển.
+       </p>
+      </div>
+     </article>
+     <article class="experience-card">
+      <img alt="Ẩm thực" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=85"/>
+      <div>
+       <span>
+        02 / ẨM THỰC
+       </span>
+       <h3>
+        Nếm vị địa phương
+       </h3>
+       <p>
+        Khám phá món ăn bản địa, quán nhỏ thân quen và câu chuyện phía sau mỗi hương vị.
+       </p>
+      </div>
+     </article>
+     <article class="experience-card">
+      <img alt="Kiến trúc" src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85"/>
+      <div>
+       <span>
+        03 / VĂN HÓA
+       </span>
+       <h3>
+        Chạm vào bản sắc
+       </h3>
+       <p>
+        Ghé thăm di tích, làng nghề và những không gian lưu giữ ký ức vùng miền.
+       </p>
+      </div>
+     </article>
+     <article class="experience-card">
+      <img alt="Phiêu lưu" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"/>
+      <div>
+       <span>
+        04 / KHÁM PHÁ
+       </span>
+       <h3>
+        Thử điều mới mẻ
+       </h3>
+       <p>
+        Đón một cung đường lạ, thức dậy sớm hơn và để hành trình dẫn lối.
+       </p>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="carousel-section">
+    <div class="container">
+     <div class="section-heading">
+      <div>
+       <span class="eyebrow light">
+        TRAVEL MOMENTS
+       </span>
+       <h2>
+        Khoảnh khắc
+        <em>
+         muốn lưu giữ
+        </em>
+       </h2>
+      </div>
+      <div class="carousel-controls">
+       <button aria-label="Ảnh trước" id="prevSlide">
+        ←
+       </button>
+       <button aria-label="Ảnh tiếp" id="nextSlide">
+        →
+       </button>
+      </div>
+     </div>
+     <div class="carousel-window">
+      <div class="carousel-track" id="carouselTrack">
+       <img alt="Thiên nhiên hùng vĩ" src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"/>
+       <img alt="Hồ và núi" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=85"/>
+       <img alt="Dãy núi" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"/>
+       <img alt="Hồ giữa núi" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=85"/>
+      </div>
+     </div>
+     <p class="carousel-caption" id="carouselCaption">
+      01 — Những miền đất gọi mời
+     </p>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <a class="brand" href="index.html">
+     ✦ ĐI ĐÂU ĐÓ
+     <span class="brand-dot">
+      .
+     </span>
+    </a>
+    <p>
+     Đi để cảm nhận. Đi để trưởng thành.
+    </p>
+    <span>
+     © 2026 ĐI ĐÂU ĐÓ.
+    </span>
+   </div>
+  </footer>
+  <script src="js/main.js">
+  </script>
+ </body>
+</html>
